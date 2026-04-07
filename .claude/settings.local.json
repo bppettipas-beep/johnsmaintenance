@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"F:\\\\Claude Code\\\\John's Maintenance\" /s /b)",
+      "Bash(ls:*)",
+      "Bash(sed:*)"
+    ]
+  }
+}

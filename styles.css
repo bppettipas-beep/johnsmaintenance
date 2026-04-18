@@ -324,7 +324,6 @@ ul { list-style: none; }
 .hero-title em {
   font-style: italic;
   color: var(--gold-300);
-  white-space: nowrap;
 }
 .hero-subtitle {
   font-size: clamp(1rem, 2vw, 1.18rem);
@@ -1203,9 +1202,14 @@ a.contact-card:hover { border-color: var(--green-400); box-shadow: var(--sh-sm);
 }
 
 @media (max-width: 480px) {
-  .hero-title { font-size: 2.6rem; }
+  .hero-content { padding: 90px 20px 48px; }
+  .hero-title { font-size: clamp(2rem, 9vw, 2.6rem); }
+  .hero-subtitle { font-size: 0.95rem; }
   .hero-actions { flex-direction: column; align-items: center; }
-  .hero-badge { font-size: 0.66rem; }
+  .hero-actions .btn { width: 100%; justify-content: center; }
+  .hero-badge { font-size: 0.66rem; padding: 6px 12px; }
+  .hero-areas { gap: 6px; }
+  .hero-areas span { font-size: 0.68rem; }
   .sfc-body { padding: 28px 24px; }
   .sfc-body h3 { font-size: 1.4rem; }
 }
